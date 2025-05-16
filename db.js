@@ -3,9 +3,11 @@ const mysql = require('mysql');
 
 // Connect without specifying a database
 const connection = mysql.createConnection({
-  host: 'localhost',
+  host: 'mysql.railway.internal',
   user: 'root',
-  password: 'NMan4@*44' // your MySQL password
+  password: 'qGrzONtHiZBgTzqZylhIvKgCdCystYaZ',
+  port: 3306,
+  database: 'railway'
 });
 
 connection.connect((err) => {
